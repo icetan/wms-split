@@ -1,0 +1,31 @@
+{
+  "name": "wms-split",
+  "version": "0.0.0",
+  "description": "WMS viewer for comparing maps.",
+  "author": "Christopher Fredén <c.freden@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/icetan/wms-split.git"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://raw.github.com/icetan/wms-split/master/LICENSE"
+    }
+  ],
+  "dependencies": {
+    "leaflet": "~0.6.4",
+    "proj4leaflet": "~0.6.2"
+  },
+  "devDependencies": {
+    "browserify": "*",
+    "watchify": "*",
+    "uglify-js": "*",
+    "imgbase": "*"
+  },
+  "scripts": {
+    "install": "browserify lib/client.js | uglifyjs > www/script.js && node build/cmb.js www < www/app.html > www/index.html",
+    "watch": "watchify -o www/script.js -vd lib/client.js",
+    "start": "node lib/proxy.js"
+  }
+}

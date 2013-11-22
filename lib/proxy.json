@@ -1,0 +1,6 @@
+{
+  "listen": "localhost:1338",
+  "host": "example.com",
+  "port": 80,
+  "headers": { }
+}
