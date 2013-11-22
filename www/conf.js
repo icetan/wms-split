@@ -15,20 +15,24 @@ window.conf = {
     maxZoom: 15,
     minZoom: 0
   },
-  wms: [
+  layers: [
     {
       name: 'GIF',
       url: "http://osm.omniscale.net/proxy/service",
-      layers: "osm",
-      format: 'image/gif',
-      continuousWorld: true
+      wms: {
+        layers: "osm",
+        format: 'image/gif',
+        continuousWorld: true
+      }
     },
     {
       name: 'PNG',
       url: "http://osm.omniscale.net/proxy/service",
-      layers: "osm",
-      format: 'image/png',
-      continuousWorld: true
+      wms: {
+        layers: "osm",
+        format: 'image/png',
+        continuousWorld: true
+      }
     }
   ]
 };
