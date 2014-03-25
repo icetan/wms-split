@@ -1,6 +1,6 @@
 {
   "name": "wms-split",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "WMS viewer for comparing maps.",
   "author": "Christopher Fredén <c.freden@gmail.com>",
   "repository": {
