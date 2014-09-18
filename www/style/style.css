@@ -10,6 +10,14 @@ html, body {
   user-select: none;
 }
 
+.grayscale {
+  -webkit-filter: grayscale(1);
+  -moz-filter: grayscale(1);
+  -ms-filter: grayscale(1);
+  -o-filter: grayscale(1);
+  filter: grayscale(1);
+}
+
 #map-left {
   position: absolute;
   top:0; right:0; bottom:0; left:0;
@@ -37,4 +45,10 @@ html, body {
   border-left: 1px dashed #333;
   position: absolute;
   top:0; bottom:0; left: 50%;
+}
+
+#grayscale {
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
