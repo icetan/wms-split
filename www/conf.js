@@ -15,6 +15,8 @@ window.conf = {
     maxZoom: 15,
     minZoom: 0
   },
+  defaultLeft:'GIF',
+  defaultRight:'PNG',
   layers: [
     {
       name: 'GIF',
