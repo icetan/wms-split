@@ -14,8 +14,8 @@
     }
   ],
   "dependencies": {
-    "leaflet": "~0.6.4",
-    "proj4leaflet": "~0.6.2"
+    "leaflet": "~0.7.0",
+    "proj4leaflet": "~0.7.0"
   },
   "devDependencies": {
     "browserify": "*",
